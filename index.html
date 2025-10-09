@@ -13,7 +13,39 @@
   </head>
   <body>
     <div class="app">
-      <aside clas="sidebar"></aside>
+      <buton class="icon-button open-toggle" id="btn-open">
+        <img src="assets/open.svg" alt="Abrir Menu" class="icon" />
+      </buton>
+
+      <aside class="sidebar">
+        <header class="sidebar-header">
+          <img src="assets/logo.svg" alt="Logo" class="logo" />
+
+          <button class="icon-button" id="btn-collapse">
+            <img src="assets/collapse.svg" alt="Fechar Menu" class="icon" />
+          </button>
+        </header>
+
+        <div class="sidebar-content">
+          <div class="search-container">
+            <img
+              src="assets/search.svg"
+              alt="Buscar"
+              class="icon search-icon"
+            />
+            <input
+              type="text"
+              class="search-input"
+              id="search-input"
+              placeholder="Buscar por título"
+            />
+
+            <button class="btn-primary btn btn-full" id="btn-new">
+              Novo Prompt
+            </button>
+          </div>
+        </div>
+      </aside>
 
       <main class="main">
         <header class="main-header">
@@ -56,5 +88,6 @@
         </div>
       </main>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
